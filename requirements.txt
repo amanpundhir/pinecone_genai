@@ -1,0 +1,5 @@
+pinecone-client
+sentence-transformers
+google-generativeai
+pdfplumber
+streamlit
