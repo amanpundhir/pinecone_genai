@@ -5,7 +5,7 @@ import google.generativeai as genai
 from sentence_transformers import SentenceTransformer
 
 # Set the environment variable
-genai.configure(api_key="AIzaSyCKMpA51iLjyHDST_d0IQfeolnvxcAHDJk")
+genai.configure(api_key="AIzaSyAafb7CDmEdU9cSi-DOMlq48di8-JM48e4")
 
 
 pc = Pinecone(api_key="1957212d-4aca-473e-8196-4cad8b690653")
