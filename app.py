@@ -4,11 +4,16 @@ from pinecone import Pinecone
 import google.generativeai as genai
 from sentence_transformers import SentenceTransformer
 
-# Set the environment variable
-genai.configure(api_key="AIzaSyAafb7CDmEdU9cSi-DOMlq48di8-JM48e4")
+import os  # For environment variable access
 
+# Configure Generative AI with API Key from environment variables
+genai_api_key = os.getenv("GENAI_API_KEY")
+genai.configure(api_key=genai_api_key)
 
-pc = Pinecone(api_key="1957212d-4aca-473e-8196-4cad8b690653")
+# Configure Pinecone with API Key from environment variables
+pinecone_api_key = os.getenv("PINECONE_API_KEY")
+pc = Pinecone(api_key=pinecone_api_key)
+
 index_name = "multilingual-e5-large"
 
 
